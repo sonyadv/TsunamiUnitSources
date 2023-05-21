@@ -28,7 +28,7 @@ eta_at = eta_at-1;
 
 %% linear superposition
 % load free-surface elevation
-for ii=0:interval:4500
+for ii=0:interval:total
     
     cd('database')
     fn_head=['z_' sprintf('%02d',grid) '_'];
