@@ -16,8 +16,6 @@ node=6;                   %unit sources的大小
 
 % numerical parameters
 cd('org')
-dt=8.0; output_dt=1800; simulation_time=3600;
-dt0=output_dt/dt;
 % load bathymetry
 lx=dlmread('layer01_x.dat');  %先到COMCOT跑要的網格大小及地形範圍
 ly=dlmread('layer01_y.dat');  %把得到後的資料變成真實的經緯度範圍
