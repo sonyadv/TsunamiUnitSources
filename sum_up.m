@@ -76,13 +76,3 @@ csvwrite([event '_' sprintf('%02d',grid) '_Zmax.csv'],out_max)
 
 out_at=reshape(eta_at,length(sup_x),length(sup_y))';
 csvwrite([event '_' sprintf('%02d',grid) '_arrivalTime.csv'],out_at)
-
-%% tide up
-% path = ['output' sprintf('%02d',grid)];
-% if ~exist(path,'dir')==0
-%    mkdir(path);
-% end
-% 
-% % move the png files to the specified folders
-% files = ['*.csv'];
-% movefile(['output' sprintf('%02d',grid)], files, 'f');
