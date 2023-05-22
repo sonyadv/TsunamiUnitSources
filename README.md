@@ -3,7 +3,7 @@
 
 ## Pre-Preapare
 * COMCOT v1.7 or later
-* scalling law
+* scalling law (optional)
 * bathmetry files
 
 ## comcot_generate.m
