@@ -2,7 +2,10 @@
 > 自動生成指定範圍、指定大小的點源海嘯資料庫
 
 ## comcot_generate.m
-1. 
+1. 打開 `sample.ctl`
+2. 輸入震源機制解，並透過 scaling law 取得參數
+3. 將參數填入，並生成 `comcot.ctl`
+4. 使用 COMCOT 進行運算，得數值解
 
 ## database_generate.m
 1. 設定參數
