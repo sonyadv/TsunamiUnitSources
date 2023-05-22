@@ -6,10 +6,10 @@
 2. 資料庫疊加速算 Database Superposition Calaculate System
     * branch -> `DatabaseSpuerposition`
 3. 附錄 Appendix
-    * bathmetry files
     * COMCOT v1.8
-    * comMIT(link)
     * scalling law
+    * comMIT
+    * bathmetry files
 
 ## 作業流程 Operation Procedure
 1. 建立資料庫 Build up a Database
