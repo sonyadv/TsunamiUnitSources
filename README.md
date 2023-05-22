@@ -13,5 +13,5 @@
 * comMIT notes: https://hackmd.io/@sonyadv/S1e9UrHx2
 
 ## Bathmetry files
-* Etopo: https://www.ncei.noaa.gov/products/etopo-global-relief-model
-* Taiwan: 
+* Etopo from NOAA: https://www.ncei.noaa.gov/products/etopo-global-relief-model
+* Taiwan from ODB: https://www.odb.ntu.edu.tw/bathy/ 
