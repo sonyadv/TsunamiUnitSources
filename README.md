@@ -1,6 +1,11 @@
 # Auto Generate Unit-Sources Database
 > 自動生成指定範圍、指定大小的點源海嘯資料庫
 
+## Pre-Preapare
+* COMCOT v1.7 or later
+* scalling law
+* bathmetry files
+
 ## comcot_generate.m
 1. 打開 `sample.ctl`
 2. 輸入震源機制解，並透過 scaling law 取得參數
