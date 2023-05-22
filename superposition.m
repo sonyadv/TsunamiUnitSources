@@ -27,7 +27,6 @@ eta_at = zeros(size(sup_bath));
 eta_at = eta_at-1;
 
 %% linear superposition
-% load free-surface elevation
 for ii=0:interval:total
     
     cd('database')
