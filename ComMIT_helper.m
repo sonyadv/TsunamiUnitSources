@@ -1,15 +1,15 @@
-%nc_dump('japan311_2_source001_runupA_ha.nc');
+%nc_dump('.nc');
 clc; clear; fclose all; close all;
 
-%% 檔名
+%% initial setting
 mostname = '.most';
 ncname = '.nc';
 name = 'Grid';
 
-%% 讀地形檔
+%% read and plot bathmetry files
 mostFn = dlmread(mostname);
 
-% 前處理
+% pre-process
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % most format：                                                           %
 %                                                                         %
@@ -31,7 +31,7 @@ bath = mostFn(x+y+2:x+y+1+x,1:y);
 bath = bath.*-1;
 [Lon,Lat] = meshgrid(lon,lat);
 
-% 畫圖
+% plot
 figure(1)
 p = pcolor(Lon,Lat,bath);                                              % 畫地形圖
 set(p, 'EdgeColor', 'none');                                           % pcolor不要網格
@@ -51,7 +51,7 @@ csvwrite(['commitLAT.csv'],lat)
 ts=nc_varget(ncname,'TIME');
 ha=nc_varget(ncname,'HA');
 
-% 前處理
+% pre-process
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % runup.nc format:                                                        %
 %                                                                         %
@@ -76,7 +76,7 @@ ha=nc_varget(ncname,'HA');
 wave = ha(1,:,:);
 wave = reshape(wave,x,y);
 
-% 畫圖
+% plot
 figure(2)
 p = pcolor(Lon,Lat,wave);                                                 % 畫地形圖
 set(p, 'EdgeColor', 'none');                                              % pcolor不要網格
@@ -94,7 +94,7 @@ print([name '_initialSurface.png'],'-dpng','-r600');                      % 印�
 
 csvwrite(['comcot00.csv'],wave)
 
-%% 單點時序波高圖
+%% Wave height 
 gauge_x = 152.123;
 gauge_y = 30.528;
 
