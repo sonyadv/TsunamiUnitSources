@@ -57,8 +57,8 @@ ha=nc_varget(ncname,'HA');
 %                                                                         %
 % dimensions:                                                             %
 %   LON = x ;                                                             %
-%	LAT = y ;                                                             %
-%	TIME(sec) = UNLIMITED ;                                               %
+%   LAT = y ;                                                             %
+%   TIME(sec) = UNLIMITED ;                                               %
 %                                                                         %
 % variables:                                                              %
 %     single VA(TIME,LAT,LON), shape = [t x y]                            %
@@ -67,7 +67,7 @@ ha=nc_varget(ncname,'HA');
 %     single UA(TIME,LAT,LON), shape = [t x y]                            %
 %         UA:units = "CENTIMETERS/SECOND" ;                               %
 %         UA:long_name = "Velocity Component along Longitude" ;           %
-% 	  single HA(TIME,LAT,LON), shape = [t x y]                            %
+%     single HA(TIME,LAT,LON), shape = [t x y]                            %
 %         HA:long_name = "Wave Amplitude" ;                               %
 %         HA:units = "CENTIMETERS" ;                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
